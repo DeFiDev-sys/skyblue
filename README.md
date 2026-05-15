@@ -1,15 +1,18 @@
 # SkyBlue Landing Page
 
-A modern, responsive landing page built with HTML, CSS, and JavaScript featuring a beautiful sky blue color theme.
+A modern, responsive landing page built with HTML, CSS, and JavaScript featuring a beautiful sky blue color theme with dark mode support.
 
 ## Features
 
 - Fully responsive design (mobile, tablet, desktop)
+- Dark mode / Light mode toggle with persistence
 - Smooth scroll navigation
 - Animated stats counter
 - Interactive mobile hamburger menu
-- Contact form with validation
+- Contact form with theme support
 - Beautiful sky blue color scheme
+- Image backgrounds for hero and contact sections
+- FontAwesome icons for social links
 - CSS animations and transitions
 
 ## Project Structure
@@ -61,7 +64,7 @@ Simply double-click the `index.html` file to open it in your default web browser
 
 ## Customization
 
-### Changing Colors
+### Theme Colors
 Edit the CSS variables in `styles.css`:
 ```css
 :root {
@@ -69,6 +72,27 @@ Edit the CSS variables in `styles.css`:
     --sky-blue-dark: #5DADE2;
     --sky-blue-darker: #3498DB;
     /* ... other variables */
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --bg-color: #1a1a2e;
+    --bg-secondary: #16213e;
+    /* ... dark mode variables */
+}
+```
+
+### Changing Background Images
+Update the URL in `styles.css` for the hero and contact sections:
+```css
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('your-image-url');
+}
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('your-image-url');
 }
 ```
 
