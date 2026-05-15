@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -336,7 +336,6 @@ body {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease, background 0.3s ease, color 0.3s ease;
-    font-family: inherit;
     background: var(--input-bg);
     color: var(--form-text);
 }
